@@ -1,0 +1,22 @@
+node_modules/
+logs/
+*.log
+*.jsonl
+.env
+
+# Credentials - never commit
+GovCloudAPI.txt
+APISpecial.txt
+API*.txt
+*.cred.txt
+livecheck.json
+
+# Build output (published as GitHub release assets instead)
+*.tar.gz
+*.zip
+standalone/node_modules/
+standalone/build/
+standalone/dist/
+standalone/release/
+
+.claude/
