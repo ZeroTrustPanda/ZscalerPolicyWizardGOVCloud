@@ -2,7 +2,7 @@
 
 **Coded by Steven Hajny, Distinguished Engineer**
 
-Automates Zscaler Internet Access (ZIA) policy for government tenants using **only the legacy ZIA API** (`zsapi.<cloud>.net`, admin username + password + API key). The wizard applies the **DOW Standard**, **NIST 800-53 Rev 5** or **NIST 800-171** frameworks — or a framework you saved or captured from another tenant — and gives every rule and setting its own on/off switch.
+Automates Zscaler Internet Access (ZIA) policy for government tenants using **only the legacy ZIA API** (`zsapi.<cloud>.net`, admin username + password + API key). The wizard applies the  **NIST 800-53 Rev 5** or **NIST 800-171** frameworks — or a framework you saved or captured from another tenant — and gives every rule and setting its own on/off switch.
 
 It is a standalone Windows app: no Node.js, nothing to install. Credentials stay on the computer running it.
 
