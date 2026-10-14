@@ -11,7 +11,7 @@ API*.txt
 *.cred.txt
 livecheck.json
 
-# Build output (published as GitHub release assets instead)
+# Build output (copy finished zips into downloads/)
 *.tar.gz
 *.zip
 standalone/node_modules/
@@ -20,3 +20,6 @@ standalone/dist/
 standalone/release/
 
 .claude/
+
+# Ready-to-run downloads are kept in git
+!downloads/*.zip

@@ -10,9 +10,13 @@ It is a standalone Windows app: no Node.js, nothing to install. Credentials stay
 
 ## Download and run
 
-Download `ZscalerPolicyWizard-GovCloud-<version>-windows-x64.zip` from **[Releases](../../releases)**, unzip it and double-click `ZscalerPolicyWizard-GovCloud.exe`. Your browser opens the wizard on `http://127.0.0.1:3000` (or the next free port). Keep the console window open while you use it.
+Download the zip for your computer from [`downloads/`](downloads/), unzip it and run it. Your browser opens the wizard on `http://127.0.0.1:3000` (or the next free port). Keep the console window open while you use it.
 
-macOS builds (`macos-arm64` for Apple Silicon, `macos-x64` for Intel) are on the same release page.
+| Computer | Download |
+|---|---|
+| Windows 10/11 (64-bit) | [`ZscalerPolicyWizard-GovCloud-1.0.0-windows-x64.zip`](downloads/ZscalerPolicyWizard-GovCloud-1.0.0-windows-x64.zip) |
+| Mac with Apple Silicon | [`ZscalerPolicyWizard-GovCloud-1.0.0-macos-arm64.zip`](downloads/ZscalerPolicyWizard-GovCloud-1.0.0-macos-arm64.zip) |
+| Intel Mac | [`ZscalerPolicyWizard-GovCloud-1.0.0-macos-x64.zip`](downloads/ZscalerPolicyWizard-GovCloud-1.0.0-macos-x64.zip) |
 
 The builds are not code-signed yet:
 - **Windows:** if SmartScreen says *Windows protected your PC*, choose **More info → Run anyway**.
