@@ -33,14 +33,14 @@ apikey=<12-character API key>
 
 `APISpecial.txt` is also recognised. The file is read only on this computer. It is never sent to the browser or written to the logs, and `.gitignore` keeps it out of git.
 
-**Read-only tenant check.** `ZscalerPolicyWizard-GovCloud.exe --livecheck` signs in and reads categories, isolation profiles, IPS, ATP, URL and SSL rules, certificates and network applications. It runs a DOW dry run and writes `livecheck.json` next to the exe. Nothing in the tenant changes.
+**Read-only tenant check.** `ZscalerPolicyWizard-GovCloud.exe --livecheck` signs in and reads categories, isolation profiles, IPS, ATP, URL and SSL rules, certificates and network applications. It runs a  dry run and writes `livecheck.json` next to the exe. Nothing in the tenant changes.
 
 ## What it does
 
-### DOW Standard
+###  Standard
 | Area | What is applied |
 |---|---|
-| URL Filtering | **Block** and **Allow** lists from the DOW category sheet. **Every other category is isolated** in Cloud Browser Isolation; the Isolate list is rebuilt from the tenant's own categories at dry run, so newer categories are included. Sheet rows marked *custom* are matched to existing ZIA categories; unmatched rows fall into Isolate. |
+| URL Filtering | **Block** and **Allow** . **Every other category is isolated** in Cloud Browser Isolation; the Isolate list is rebuilt from the tenant's own categories at dry run, so newer categories are included. Sheet rows marked *custom* are matched to existing ZIA categories; unmatched rows fall into Isolate. |
 | Cloud Browser Isolation | Uses the tenant's **Default Isolation Profile** unless you pick another; **↻ Refresh** picks up profiles created since the page loaded. Browser types are copied from an existing Isolate rule when there is one. |
 | Advanced Threat Protection | P2P (BitTorrent, Tor), cryptomining, botnet, compromised host, phishing and spam blocked. **China, Russia, Iran, Iraq, Somalia and North Korea** are added to the countries the tenant already blocks; nothing is unblocked. |
 | IPS | Block Command and Control (Botnet + Unknown C2). |
@@ -78,7 +78,7 @@ Running from source also works: `npm ci && npm start`, then open `http://localho
 |---|---|
 | `server/index.js` | Express server: legacy auth, dry run, apply, rollback, frameworks, SSL manager |
 | `server/zia-client.js` | Legacy ZIA API client (session cookie, obfuscated key, paced calls) |
-| `server/dow-standard.js` | DOW Standard sheet mapping |
+| `server/dow-standard.js` |  Standard sheet mapping |
 | `server/templates.js` | NIST 800-53 / 800-171 templates, toggles, rule-name limits |
 | `server/tenant-resolve.js` | Matches a policy set to the connected tenant before dry run / apply |
 | `server/framework-io.js` | Framework save / load / tenant capture |
