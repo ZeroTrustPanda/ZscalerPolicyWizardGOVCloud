@@ -26,7 +26,7 @@ The builds are not code-signed yet:
 
 ```
 baseurl=https://zsapi.zscalergov.net
-username=admin@agency.gov
+username=admin@domain.com
 password=...
 apikey=<12-character API key>
 ```
